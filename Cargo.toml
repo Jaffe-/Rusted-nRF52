@@ -1,0 +1,13 @@
+[package]
+name = "nrf-test"
+version = "0.1.0"
+authors = ["Johan Fjeldtvedt <jaffe1@gmail.com>"]
+
+[profile.dev]
+lto = true
+panic = "abort"
+
+[profile.release]
+lto = true
+
+[dependencies]
