@@ -14,8 +14,11 @@ SECTIONS
     LONG(__StackTop);
     KEEP(*(.reset_handler));
 
-    . = 0xD8;
+    . = 0x100;
 
+    *(.text)
     *(.text*)
+    *(.rodata)
+    *(.rodata*)
   } > FLASH
 }
